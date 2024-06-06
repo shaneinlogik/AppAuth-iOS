@@ -44,4 +44,4 @@
 }
 
 
-define AppAuthRequestTrace(fmt, ...) NSLog(fmt, ##__VA_ARGS__);
+#   define AppAuthRequestTrace(fmt, ...) NSLog(fmt, ##__VA_ARGS__);
