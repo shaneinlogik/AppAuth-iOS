@@ -536,6 +536,10 @@ NS_ASSUME_NONNULL_BEGIN
       return;
     }
 
+    if(tokenResponse.scope) {
+      AppAuthRequestTrace(@"Token Response Scope: %@", tokenResponse.scope);
+    }
+
     // If an ID Token is included in the response, validates the ID Token following the rules
     // in OpenID Connect Core Section 3.1.3.7 for features that AppAuth directly supports
     // (which excludes rules #1, #4, #5, #7, #8, #12, and #13). Regarding rule #6, ID Tokens
